@@ -98,3 +98,7 @@ class Func(Code):
 
     def add(self, char):
         self.code += char
+
+    def run(self):
+        for char in self.code:
+            self._step(char)
